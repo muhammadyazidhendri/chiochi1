@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yang.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<!-- logo -->
+    <link rel="icon" href="img/logo web.jpg" type="image/x-icon">
+<!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+<!-- midtrans scrip -->
+    <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-QiVCWrqX5HHiFyoq"></script>
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Chocolate - Cokelat Premium</title>
+</head>
+<body>
+
+<!-- navbar start -->
+<nav class="navbar">
+    <a href="#" class="navbar-logo">CHOCHI<span>チョコレート</span></a>
+
+    <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="cart-icon"><i data-feather="shopping-cart" class="fas fa-shopping-cart"></i><span class="badge" id="cart-count">0</span></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+    </div>
+<!-- Search from start -->
+    <div class="search-form" id="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+<!-- Search from end -->
+<!-- Shopping card start -->
+    <div class="cart" id="cart">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items-container" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="total" id="total">
+            Total: Rp 0
+        </div>
+        <div class="checkout-form">
+            <input type="text" id="name" placeholder="Nama" required autocomplete="off">
+            <input type="tel" id="phone" placeholder="Nomor HP" required autocomplete="off">
+            <input type="email" id="email" placeholder="Email" required autocomplete="off">
+            <button class="checkout-btn" id="checkout-btn" disabled>Check Out</button>
+        </div>
+        <!-- <div class="form-container">
+            <form action="" id="checkout-form">
+                <h5>Costomer Detail</h5>
+                <label for="name">
+                    <span>Name</span>
+                    <input type="text" name="name" id="name" required autocomplete="off">
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="email" name="email" id="email" required autocomplete="off">
+                </label>
+                <label for="phone">
+                    <span>Phone</span>
+                    <input type="number" name="phone" id="phone" required autocomplete="off">
+                </label>
+                <button class="checkout-button" type="submit" id="checkout-button">Check Out</button>
+            </form>
+        </div> -->
+    </div>
+
+    <!-- <div class="shopping-cart">
+        <div class="cart-item">
+            <img src="./Foto Produk/8844261c0b4072e7da9370c1c7af5db0dae6f1c610f5b8e9ba75c1b3e9408e52 (1).png" alt="produk 1">
+            <div class="item-detail">
+                <h3>Produk 1</h3>
+                <div class="item-price">Rp. 30.000</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+            <img src="./Foto Produk/8844261c0b4072e7da9370c1c7af5db0dae6f1c610f5b8e9ba75c1b3e9408e52 (1).png" alt="produk 1">
+            <div class="item-detail">
+                <h3>Produk 1</h3>
+                <div class="item-price">Rp. 30.000</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+            <img src="./Foto Produk/8844261c0b4072e7da9370c1c7af5db0dae6f1c610f5b8e9ba75c1b3e9408e52 (1).png" alt="produk 1">
+            <div class="item-detail">
+                <h3>Produk 1</h3>
+                <div class="item-price">Rp. 30.000</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+    </div> -->
+
+<!-- Shopping card end -->
+</nav>
+<!-- Navbar end -->
+<!-- Hero Section start -->
+<section class="hero" id="Home">
+    <main class="content">
+        <h1> Bittersweet CHIOCHI Chocolate</h1>
+        <p>
+            Nikmati sensasi cokelat sejati dari kebun SumSel! Dibuat dari biji kakao pilihan yang diproses secara tradisional tanpa bahan kimia, cokelat ini menawarkan rasa kaya dan aroma khas. Dengan varian sehat yang cocok untuk diet, setiap gigitan menghadirkan kenangan manis tanpa rasa khawatir.
+        </p>
+        <a href="menu.html" class="cta">Buy Now</a>
+    </main>
+</section>
+<!-- Hero Section end -->
+
+
+<!-- About Section start -->
+<section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="row">
+        <div class="about-img">
+            <img src="./img/KEL TEB.jpg" alt="Tentang Kami">
+        </div>
+    <div class="content">
+        <h3>Rasakan Sensasi Cokelat Sejati dari Kebun Sumsel</h3>
+        <p>
+            Selamat datang di CHOCHI <span>チョコレート</span>, tempat di mana keajaiban rasa cokelat dimulai dari akar budaya lokal. Kami menghadirkan cokelat batang asli yang dibuat dari biji kakao pilihan, dipanen langsung dari kebun kakao milik petani lokal di Sumatera Selatan.
+        </p>
+        <h3>Komitmen Kami</h3>
+        <p>
+            Kami berkomitmen untuk mengedepankan kejujuran dalam rasa dan kualitas. Dengan bahan alami, teknik tradisional, dan dedikasi untuk mendukung petani lokal, cokelat kami adalah pilihan terbaik untuk Anda yang menghargai kelezatan sekaligus keberlanjutan.
+        </p>
+    </div>
+    </div>
+</section>
+<!-- About Section end -->
+
+<!-- Menu Section start -->
+<section id="menus" class="menus">
+    <h2><span>Menu</span> Kami</h2>
+    <p>"Nikmati Momen Manis dengan Varian Cokelat kami. " 
+        Pilihan Cokelat Berkualitas bercampur keajaiban rasa.</p>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg" alt="Almond Chocolate Bar">
+            <h3>Cokelat 1</h3>
+            <p>Deskripsi cokelat 1.</p>
+            <p>Harga: Rp 100.000</p>
+            <button onclick="addToCart('Cokelat 1', 100000, 'https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg')">Beli Sekarang</button>
+        </div>
+        <div class="product">
+            <img src="https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg" alt="Almond Chocolate Bar">
+            <h3>Cokelat 2</h3>
+            <p>Deskripsi cokelat 2.</p>
+            <p>Harga: Rp 200.000</p>
+            <button onclick="addToCart('Cokelat 2', 200000, 'https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg')">Beli Sekarang</button>
+        </div>
+        <div class="product">
+            <img src="https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg" alt="Almond Chocolate Bar">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 3', 300000, 'https://storage.googleapis.com/a1aa/image/JoaJ2d5BWEJyMlDPIhyiunQhIcbSTYqKtT5j5HS3ytRdPxeJA.jpg')">Beli Sekarang</button>
+        </div>
+        <!-- <div class="product">
+            <img src="./Foto Produk/8844261c0b4072e7da9370c1c7af5db0dae6f1c610f5b8e9ba75c1b3e9408e52 (1).png" alt="Cokelat 2">
+            <h3>Cokelat 2</h3>
+            <p>Deskripsi cokelat 2.</p>
+            <p>Harga: Rp 200.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div>
+        <div class="product">
+            <img src="./Foto Produk/fff23e9d9679fa5dbc4540a8b6f09edfaba7b3ca82c460c40f08459f5427a888 (1).png" alt="Cokelat 3">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div>
+        <div class="product">
+            <img src="./Foto Produk/fff23e9d9679fa5dbc4540a8b6f09edfaba7b3ca82c460c40f08459f5427a888 (1).png" alt="Cokelat 3">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div>
+        <div class="product">
+            <img src="./Foto Produk/fff23e9d9679fa5dbc4540a8b6f09edfaba7b3ca82c460c40f08459f5427a888 (1).png" alt="Cokelat 3">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div>
+        <div class="product">
+            <img src="./Foto Produk/fff23e9d9679fa5dbc4540a8b6f09edfaba7b3ca82c460c40f08459f5427a888 (1).png" alt="Cokelat 3">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div>
+        <div class="product">
+            <img src="./Foto Produk/fff23e9d9679fa5dbc4540a8b6f09edfaba7b3ca82c460c40f08459f5427a888 (1).png" alt="Cokelat 3">
+            <h3>Cokelat 3</h3>
+            <p>Deskripsi cokelat 3.</p>
+            <p>Harga: Rp 300.000</p>
+            <button onclick="addToCart('Cokelat 1', 50000, './Foto Produk/4dcc962ed9dca8f67b314212516904326d627374de355f43512ce1d1af17b3e1 (1).png')">Beli Sekarang</button>
+            
+        </div> -->
+    </div>
+
+
+</section>
+
+<!-- Menu Section end -->
+
+<!-- Contact Section start -->
+<section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <div class="map-body">
+    <div class="container">
+        <div class="form-container">
+            <h1>Book A Table</h1>
+            <input type="text" placeholder="Your Name"/>
+            <input type="text" placeholder="Phone Number"/>
+            <input type="email" placeholder="Your Email"/>
+            <select>
+                <option>How many persons?</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <input type="date" placeholder="mm/dd/yyyy"/>
+            <button>BOOK NOW</button>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.44553999929!2d104.68056246058134!3d-2.9547940566845265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1733201278708!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+
+
+</section> 
+<!-- Contact Section start -->
+<!-- team start -->
+<section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <section id="team-body" class="team-body">
+    <div class="container">
+        <!-- <div class="title">
+         TEAM
+        </div>
+        <div class="main-title">
+         OUR HARDWORKING TEAM
+        </div> -->
+        <div class="team">
+         <div class="team-member">
+          <img alt="Portrait of Walter White, Chief Executive Officer" height="250" src="./img/Yazid.jpg" width="250"/>
+          <div class="social-icons">
+           <!-- <a href="#">
+            <i class="fas fa-times">
+            </i>
+           </a>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a> -->
+           <a href="https://www.instagram.com/m_yazidhendri/">
+            <i class="fab fa-instagram">
+            </i>
+           </a>
+           <!-- <a href="#">
+            <i class="fab fa-linkedin-in">
+            </i>
+           </a> -->
+          </div>
+          <div class="info">
+           <div class="name">
+            M. Yazid Hendri W
+           </div>
+           <div class="position">
+            ui/ux desainer website & Programer
+           </div>
+          </div>
+         </div>
+         <div class="team-member">
+          <img alt="Portrait of Sarah Jhonson, Product Manager" height="250" src="./img/Widya.jpg" width="250"/>
+          <div class="social-icons">
+           <!-- <a href="#">
+            <i class="fas fa-times">
+            </i>
+           </a>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a> -->
+           <a href="https://www.instagram.com/uichaa_/">
+            <i class="fab fa-instagram">
+            </i>
+           </a>
+           <!-- <a href="#">
+            <i class="fab fa-linkedin-in">
+            </i>
+           </a> -->
+          </div>
+          <div class="info">
+           <div class="name">
+            Widya Putri Novianti
+           </div>
+           <div class="position">
+            Product Designer
+           </div>
+          </div>
+         </div>
+         <div class="team-member">
+          <img alt="Portrait of William Anderson, CTO" height="250" src="./img/Gilang.jpg" width="250"/>
+          <div class="social-icons">
+           <!-- <a href="#">
+            <i class="fas fa-times">
+            </i>
+           </a>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a> -->
+           <a href="https://www.instagram.com/gilangprtama_22/">
+            <i class="fab fa-instagram">
+            </i>
+           </a>
+           <!-- <a href="#">
+            <i class="fab fa-linkedin-in">
+            </i>
+           </a> -->
+          </div>
+          <div class="info">
+           <div class="name">
+            Gilang Pratama
+           </div>
+           <div class="position">
+            Illustrator Product
+           </div>
+          </div>
+         </div>
+         <div class="team-member">
+          <img alt="" height="250" src="./img/Danar.jpg" width="250"/>
+          <div class="social-icons">
+           <!-- <a href="#">
+            <i class="fas fa-times">
+            </i>
+           </a>
+           <a href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a> -->
+           <a href="https://www.instagram.com/danarmahendraa/">
+            <i class="fab fa-instagram">
+            </i>
+           </a>
+          </div>
+          <div class="info">
+           <div class="name">
+            Danar Mahendra
+           </div>
+           <div class="position">
+            Analyst Desain Web
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+    </section>
+</section>
+
+<!-- team end -->
+<!-- footers  start -->
+<section id="footers" class="footers">
+    <div class="footer">
+        <div>
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Palembang</p>
+            <p><i class="fas fa-phone"></i> Call +01 1234567890</p>
+            <p><i class="fas fa-envelope"></i> Chiochi@gmail.com</p>
+        </div>
+        <div>
+            <h3>CHOCHI<span> チョコレート</span></h3>
+            <p>Kami hanya menggunakan biji kakao premium pilihan untuk menghadirkan rasa terbaik di setiap gigitan. Dengan kualitas unggulan, proses yang penuh perhatian, dan kandungan gula yang rendah, kami menciptakan cokelat istimewa yang sempurna untuk memanjakan momen spesial Anda dengan lebih sehat</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div>
+            <h3>Opening Hours</h3>
+            <p>Everyday</p>
+            <p>10.00 Am -10.00 Pm</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <p>© 2024 All Rights Chiochi Grub</p>
+            <p>© Chiochi Grub</p>
+        </div>
+    </div>
+</section>
+<!-- footers  end -->
+
+<!-- feather icon -->
+    <script>
+        feather.replace();
+    </script>
+
+<!-- My JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
